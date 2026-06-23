@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <title>噯拼哞｜清潔・水電修繕・特殊場域服務</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="噯拼哞提供居家清潔、水電修繕、裝潢後清潔、店面旅宿清潔、垃圾屋清潔與特殊場域服務。"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta property="og:title" content="噯拼哞｜清潔・水電修繕・特殊場域服務" />
+    <meta property="og:description" content="生活管家到府服務，先確認需求，再安排合適人力與報價。" />
+    <meta property="og:image" content="assets/business-card-front.png" />
+
+    <link rel="icon" type="image/png" href="assets/logo.jpg" />
+    <link rel="stylesheet" href="constra/plugins/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="constra/plugins/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="constra/plugins/animate-css/animate.css" />
+    <link rel="stylesheet" href="constra/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="constra/plugins/slick/slick-theme.css" />
+    <link rel="stylesheet" href="constra/css/style.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="body-inner">
+      <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="top-bar-content">
+            <div class="top-bar-main">
+              <span><i class="fab fa-line"></i>官方 LINE：@619jqlpd</span>
+              <span><i class="fas fa-map-marker-alt"></i>服務地區：台北市 / 新北市</span>
+            </div>
+            <a class="top-bar-cta" href="#contact">立即預約</a>
+          </div>
+        </div>
+      </div>
+
+      <header id="header" class="header-one">
+        <div class="bg-white">
+          <div class="container">
+            <div class="logo-area">
+              <div class="row align-items-center">
+                <div class="logo col-12 text-center text-lg-left mb-0">
+                  <a class="d-inline-flex brand-logo" href="index.html">
+                    <img src="assets/logo.jpg" alt="噯拼哞標誌" />
+                    <span>
+                      <strong>噯拼哞</strong>
+                      <small>生活管家</small>
+                    </span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-navigation">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    aria-controls="navbar-collapse"
+                    aria-expanded="false"
+                    aria-label="切換導覽"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li class="nav-item active"><a class="nav-link" href="#home">首頁</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#services">服務方案</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#scenes">適用場域</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#quote">報價方式</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#cases">完工案例</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#process">預約流程</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#contact">聯絡我們</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="home" class="hero-area">
+        <div class="container">
+          <div class="row align-items-center hero-layout">
+            <div class="col-lg-7 hero-copy-col">
+              <div class="hero-copy">
+                <p class="hero-kicker">生活管家到府服務</p>
+                <h1>
+                  下班累到不想動？<br />
+                  清潔、水電、退租整理<br />
+                  交給愛拼哞一次處理好
+                </h1>
+                <p>
+                  服務雙北地區，從居家清潔、小型水電，到退租清潔、店面旅宿與特殊場域，先確認需求，再安排合適人力與報價。
+                </p>
+                <div class="hero-actions">
+                  <a class="btn btn-primary" href="#contact">立即 LINE 預約</a>
+                  <a class="btn btn-dark" href="#services">查看服務方案</a>
+                </div>
+                <div class="trust-tags" aria-label="服務承諾">
+                  <span><i class="fas fa-user-friends"></i>2人一組出工</span>
+                  <span><i class="far fa-clock"></i>基本4小時服務</span>
+                  <span><i class="fas fa-clipboard-check"></i>服務前先確認報價</span>
+                  <span><i class="fas fa-check-circle"></i>完工現場驗收</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 hero-media-col mt-5 mt-lg-0">
+              <div class="hero-card conversion-visual">
+                <div class="hero-card-label">愛拼哞生活管家</div>
+                <div class="hero-image-wrap hero-brand-visual">
+                  <img
+                    class="hero-brand-image"
+                    src="assets/business-card-front.png"
+                    alt="噯拼哞清潔水電修繕品牌主視覺"
+                  />
+                  <div class="hero-before-after-slot" hidden>
+                    <figure data-image-role="before">施工前圖片位置</figure>
+                    <figure data-image-role="after">完工後圖片位置</figure>
+                  </div>
+                </div>
+                <div class="hero-mini-tags">
+                  <span>2人一組</span>
+                  <span>基本4小時</span>
+                  <span>完工驗收</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="call-to-action-box no-padding">
+        <div class="container">
+          <div class="action-style-box">
+            <div class="row align-items-center">
+              <div class="col-md-8 text-center text-md-left">
+                <div class="call-to-action-text">
+                  <h3 class="action-title">傳照片，最快初估工時與報價</h3>
+                  <p class="action-text">
+                    加入官方 LINE，傳現場照片、地址、坪數與需求，我們會先幫你判斷適合的服務項目與預估工時。
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+                <a class="btn btn-light cta-line-btn" href="#contact">立即 LINE 傳照片</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services section-padding">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <h2 class="section-title">服務方案</h2>
+              <h3 class="section-sub-title">先確認現場，再安排合適人力</h3>
+            </div>
+          </div>
+
+          <div class="row service-card-row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <article class="service-card">
+                <div class="service-icon"><i class="fas fa-broom"></i></div>
+                <h3>居家清潔</h3>
+                <p>每人每小時 500 元起，2人一組，基本4小時。</p>
+                <ul>
+                  <li>掃拖、吸塵、除塵</li>
+                  <li>家具外觀、廚房外觀</li>
+                  <li>浴室基礎清潔</li>
+                </ul>
+                <a class="service-link" href="#contact">立即詢問</a>
+              </article>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <article class="service-card">
+                <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+                <h3>精緻清潔 / 退租清潔</h3>
+                <p>每人每小時 700 元起，依現場狀況評估。</p>
+                <ul>
+                  <li>窗溝、家電外觀</li>
+                  <li>浴室細節、廚房油污加強</li>
+                  <li>退租入租整理</li>
+                </ul>
+                <a class="service-link" href="#contact">立即詢問</a>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="service-card">
+                <div class="service-icon"><i class="fas fa-tools"></i></div>
+                <h3>水電修繕 / 生活安裝</h3>
+                <p>依項目報價，可先傳照片評估。</p>
+                <ul>
+                  <li>小型水電</li>
+                  <li>電視壁掛、洗衣機架</li>
+                  <li>家電架安裝</li>
+                </ul>
+                <a class="service-link" href="#contact">立即詢問</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scenes" class="facts-area scene-area">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <h2 class="section-title">適用場域</h2>
+              <h3 class="section-sub-title">不同空間，用不同方式處理</h3>
+            </div>
+          </div>
+          <div class="row scene-list">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <article class="scene-card">
+                <h3>居家住宅</h3>
+                <p>日常維護、浴室廚房清潔、定期清潔。</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <article class="scene-card">
+                <h3>分租套房</h3>
+                <p>退租入租、公共區域、房東交屋前整理。</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <article class="scene-card">
+                <h3>旅宿飯店</h3>
+                <p>房務清潔、定期維護、營業空間整理。</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <article class="scene-card">
+                <h3>店面商空</h3>
+                <p>營業前後、地板清潔、環境整理。</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <article class="scene-card">
+                <h3>夜場空間</h3>
+                <p>營業後整理、地面清潔、廁所與公共區域。</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <article class="scene-card">
+                <h3>工廠倉庫</h3>
+                <p>大坪數環境、堆放區、動線與角落整理。</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <article class="scene-card">
+                <h3>醫療院所</h3>
+                <p>候診區、診間周邊、營業空間維護。</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <article class="scene-card">
+                <h3>學校健身房</h3>
+                <p>公共空間、器材周邊、使用後環境整理。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="quote" class="section-padding quote-method">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <h2 class="section-title">報價方式</h2>
+              <h3 class="section-sub-title">依服務範圍與現場狀況評估</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="quote-card">
+                <span>01</span>
+                <h3>照片初估</h3>
+                <p>一般居家、小店面、小型水電修繕，可先提供坪數、照片、地點區域與希望服務時間。</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="quote-card">
+                <span>02</span>
+                <h3>現場估價</h3>
+                <p>裝潢後、垃圾屋、工廠、醫療院所、大坪數或需清運消毒的案件，建議到場確認。</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="quote-card">
+                <span>03</span>
+                <h3>定期維護</h3>
+                <p>店面、旅宿、公共空間或長期需求，可依頻率與範圍規劃維護方式。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cases" class="section-padding cases-area">
+        <div class="container">
+          <div class="case-compact" id="caseEmptyState">
+            <div>
+              <h2 class="section-title">完工案例</h2>
+              <h3>真實案例陸續整理中</h3>
+              <p>完工照片將經客戶同意後公開。預約前可先透過 LINE 了解可提供的服務紀錄。</p>
+            </div>
+            <a class="btn btn-primary" href="#contact">LINE 詢問案例</a>
+          </div>
+          <div class="row case-grid" id="caseGrid" hidden></div>
+        </div>
+      </section>
+
+      <section id="process" class="content section-padding process-area">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-lg-6">
+              <h3 class="column-title">預約流程</h3>
+              <div class="process-steps">
+                <div class="process-step">
+                  <span>1</span>
+                  <div>
+                    <h4>加 LINE 傳需求</h4>
+                    <p>提供地址、服務類型與希望時段。</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span>2</span>
+                  <div>
+                    <h4>傳照片初估</h4>
+                    <p>用現場照片快速判斷範圍、人力與工時。</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span>3</span>
+                  <div>
+                    <h4>確認時間與報價</h4>
+                    <p>確認服務內容、時間、人員與注意事項。</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span>4</span>
+                  <div>
+                    <h4>到府施作並驗收</h4>
+                    <p>完工後現場確認成果，再完成交付。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-5 mt-lg-0">
+              <h3 class="column-title">常見問題</h3>
+              <div class="faq-box">
+                <article>
+                  <h4>可以直接給價格嗎？</h4>
+                  <p>一般小型案件可用照片初估。特殊場域、垃圾屋、裝潢後或大面積案件，建議現場估價。</p>
+                </article>
+                <article>
+                  <h4>清潔和水電可以一起約嗎？</h4>
+                  <p>可以先一起詢問，會依需求判斷是否同一天處理或分時段安排。</p>
+                </article>
+                <article>
+                  <h4>大型場域可以處理嗎？</h4>
+                  <p>可先提供照片、坪數、使用狀況與希望完成時間，再評估人力與方式。</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-area section-padding">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <h2 class="section-title">聯絡我們</h2>
+              <h3 class="section-sub-title">把需求傳給噯拼哞</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="contact-info-box">
+                <span class="contact-line-label">官方 LINE 優先</span>
+                <h3>@619jqlpd</h3>
+                <p>傳現場照片、地址與需求，比電話描述更快判斷工時與報價。</p>
+                <ul class="list-unstyled">
+                  <li><i class="fab fa-line"></i><span>@619jqlpd</span></li>
+                  <li><i class="fas fa-map-marker-alt"></i><span>台北市 / 新北市</span></li>
+                  <li><i class="fas fa-phone-alt"></i><a href="tel:0229096923">02-29096923</a></li>
+                </ul>
+                <a class="btn btn-primary contact-line-btn" href="#contact">立即 LINE 預約</a>
+              </div>
+            </div>
+            <div class="col-lg-7 mt-5 mt-lg-0">
+              <form class="contact-form" id="serviceForm">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="name">姓名</label>
+                    <input class="form-control" id="name" type="text" name="name" autocomplete="name" required />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="phone">聯絡電話</label>
+                    <input class="form-control" id="phone" type="tel" name="phone" autocomplete="tel" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="service">服務項目</label>
+                  <select class="form-control" id="service" name="service" required>
+                    <option value="">請選擇項目</option>
+                    <option>居家清潔</option>
+                    <option>水電修繕</option>
+                    <option>裝潢後清潔</option>
+                    <option>垃圾屋清潔</option>
+                    <option>店面清潔</option>
+                    <option>旅宿清潔</option>
+                    <option>夜場清潔</option>
+                    <option>醫療院所清潔</option>
+                    <option>健身房清潔</option>
+                    <option>防滑鍍膜</option>
+                    <option>寵物保姆</option>
+                    <option>其他需求</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">需求說明</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="例如：退租清潔約 20 坪，浴室水垢較重，希望週六上午處理。"
+                    required
+                  ></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">整理諮詢內容</button>
+                <p class="form-note" id="formNote" role="status"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer" class="footer bg-overlay">
+        <div class="footer-main">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-5 col-md-6 footer-widget footer-about">
+                <div class="footer-brand">
+                  <img src="assets/logo.jpg" alt="噯拼哞標誌" />
+                  <div>
+                    <h3>噯拼哞</h3>
+                    <p>清潔 × 水電修繕 × 生活管家</p>
+                  </div>
+                </div>
+                <p>居家、商用與特殊場域皆可先詢問，依需求安排清潔、修繕與生活協助服務。</p>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+                <h3 class="widget-title">服務項目</h3>
+                <ul class="list-arrow">
+                  <li>居家清潔</li>
+                  <li>水電修繕</li>
+                  <li>裝潢後清潔</li>
+                  <li>完工案例</li>
+                  <li>特殊場域清潔</li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-lg-0">
+                <h3 class="widget-title">聯絡資訊</h3>
+                <div class="working-hours">
+                  電話：02-29096923<br />
+                  官方 LINE：@619jqlpd<br />
+                  服務範圍：台北市 / 新北市<br />
+                  諮詢時請先提供照片與地點
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-12 text-center">
+                <div class="copyright-info">噯拼哞 © 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+        <button class="btn btn-primary" title="回到上方">
+          <i class="fa fa-angle-double-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="constra/plugins/jQuery/jquery.min.js"></script>
+    <script src="constra/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="constra/plugins/slick/slick.min.js"></script>
+    <script src="constra/plugins/slick/slick-animation.min.js"></script>
+    <script src="constra/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="site-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

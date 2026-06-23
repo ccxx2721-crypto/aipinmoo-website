@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <title>噯拼哞後台｜圖片管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <section class="admin-login" id="loginPanel">
+        <div class="admin-card">
+          <p class="admin-kicker">愛拼哞生活管家</p>
+          <h1>圖片上傳後台</h1>
+          <p>請使用 Supabase Auth 建立的管理者帳號登入。</p>
+          <form id="loginForm">
+            <label for="email">管理者 Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="password">密碼</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+
+            <button class="btn btn-primary" type="submit">登入後台</button>
+            <p class="admin-note" id="loginNote" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="admin-dashboard" id="dashboardPanel" hidden>
+        <header class="admin-header">
+          <div>
+            <p class="admin-kicker">圖片管理</p>
+            <h1>愛拼哞官網後台</h1>
+          </div>
+          <button class="btn btn-dark" id="logoutButton" type="button">登出</button>
+        </header>
+
+        <div class="admin-grid">
+          <section class="admin-card">
+            <h2>品牌圖片</h2>
+            <form class="asset-form" data-asset-key="logo">
+              <label>品牌 LOGO</label>
+              <input type="file" name="image" accept="image/png,image/jpeg,image/webp" required />
+              <button class="btn btn-primary" type="submit">上傳 LOGO</button>
+            </form>
+
+            <form class="asset-form" data-asset-key="hero">
+              <label>首頁 Hero 圖</label>
+              <input type="file" name="image" accept="image/png,image/jpeg,image/webp" required />
+              <button class="btn btn-primary" type="submit">上傳 Hero 圖</button>
+            </form>
+            <p class="admin-note" id="assetNote" role="status"></p>
+          </section>
+
+          <section class="admin-card">
+            <h2>新增完工案例</h2>
+            <form id="caseForm">
+              <div class="admin-form-grid">
+                <label>
+                  施工前圖片
+                  <input type="file" name="beforeImage" accept="image/png,image/jpeg,image/webp" required />
+                </label>
+                <label>
+                  完工後圖片
+                  <input type="file" name="afterImage" accept="image/png,image/jpeg,image/webp" required />
+                </label>
+                <label>
+                  服務類型
+                  <input name="serviceType" type="text" placeholder="例如：退租清潔" required />
+                </label>
+                <label>
+                  地區
+                  <input name="area" type="text" placeholder="例如：新北市板橋區" required />
+                </label>
+                <label>
+                  出工人數
+                  <input name="crewCount" type="text" placeholder="例如：2人" required />
+                </label>
+                <label>
+                  工時
+                  <input name="workHours" type="text" placeholder="例如：4小時" required />
+                </label>
+              </div>
+              <label>
+                處理內容
+                <textarea name="description" rows="4" placeholder="簡述處理範圍與成果" required></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">新增案例</button>
+              <p class="admin-note" id="caseNote" role="status"></p>
+            </form>
+          </section>
+        </div>
+
+        <section class="admin-card">
+          <h2>已上架案例</h2>
+          <div class="admin-case-list" id="adminCaseList"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../site-config.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
