@@ -1064,12 +1064,21 @@ ul { padding-left: 0; }
 .reviews-privacy-note {
   font-size: 13px;
   color: var(--text-muted);
-  margin-top: 8px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  margin: 28px auto 0;
+  max-width: 520px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  line-height: 1.8;
+  text-align: left;
 }
-.reviews-privacy-note i { color: var(--blue); font-size: 12px; }
+.reviews-privacy-note i {
+  color: var(--blue);
+  font-size: 12px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
 
 /* Review placeholder cards */
 .review-placeholder {
@@ -1646,13 +1655,17 @@ ul { padding-left: 0; }
 .booking-cta-note {
   font-size: 13px;
   color: var(--text-muted);
-  line-height: 1.65;
+  line-height: 1.7;
   margin: 0;
   display: flex;
   align-items: flex-start;
   gap: 6px;
+  max-width: 100%;
+  flex-wrap: nowrap;
 }
 .booking-cta-note i { color: var(--blue); margin-top: 2px; flex-shrink: 0; }
+/* @aipinmoo 不斷行 */
+.booking-cta-line-id { white-space: nowrap; }
 
 /* Contact form */
 .contact-form {
@@ -1919,6 +1932,22 @@ ul { padding-left: 0; }
 
   .faq-acc-q { padding: 14px 0; font-size: 14px; }
   .faq-acc-a { padding-bottom: 12px; }
+
+  /* 手機版：評價隱私提醒 */
+  .reviews-privacy-note {
+    max-width: 100%;
+    margin-top: 20px;
+    justify-content: flex-start;
+    padding: 0 4px;
+  }
+
+  /* 手機版：預約 CTA 提醒文字 */
+  .booking-cta-note {
+    font-size: 12.5px;
+    line-height: 1.7;
+    flex-wrap: wrap;
+  }
+  .booking-cta-note i { flex-shrink: 0; }
 
   /* 手機版安全網 — 防止任何元素造成橫向滑動 */
   .why-card, .pre-booking-card, .review-card,
