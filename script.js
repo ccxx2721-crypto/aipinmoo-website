@@ -1,32 +1,4 @@
-const form = document.querySelector("#serviceForm");
-const note = document.querySelector("#formNote");
 const config = window.AIPIMOO_CONFIG || {};
-
-form?.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const data = new FormData(form);
-  const name = data.get("name")?.toString().trim();
-  const phone = data.get("phone")?.toString().trim();
-  const service = data.get("service")?.toString().trim();
-  const message = data.get("message")?.toString().trim();
-
-  const summary = `您好，我是 ${name}，電話 ${phone}。想詢問「${service}」：${message}`;
-
-  if (!navigator.clipboard) {
-    note.textContent = summary;
-    return;
-  }
-
-  navigator.clipboard
-    .writeText(summary)
-    .then(() => {
-      note.textContent = "已整理並複製諮詢內容，可直接貼到 LINE 傳給噯拼哞。";
-    })
-    .catch(() => {
-      note.textContent = summary;
-    });
-});
 
 const hasSupabaseConfig = Boolean(config.supabaseUrl && config.supabaseAnonKey && window.supabase);
 
@@ -122,3 +94,19 @@ async function loadDynamicContent() {
 }
 
 loadDynamicContent();
+
+// Close mobile menu when a nav link is clicked
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('#navbar-collapse .nav-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      var menu = document.querySelector('#navbar-collapse');
+      if (menu && menu.classList.contains('show')) {
+        if (window.$ && $.fn.collapse) {
+          $(menu).collapse('hide');
+        } else {
+          menu.classList.remove('show');
+        }
+      }
+    });
+  });
+});
