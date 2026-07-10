@@ -1655,15 +1655,12 @@ ul { padding-left: 0; }
 .booking-cta-note {
   font-size: 13px;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.8;
   margin: 0;
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
+  display: block;
   max-width: 100%;
-  flex-wrap: nowrap;
+  text-align: left;
 }
-.booking-cta-note i { color: var(--blue); margin-top: 2px; flex-shrink: 0; }
 /* @aipinmoo 不斷行 */
 .booking-cta-line-id { white-space: nowrap; }
 
@@ -1950,10 +1947,8 @@ ul { padding-left: 0; }
   /* 手機版：預約 CTA 提醒文字 */
   .booking-cta-note {
     font-size: 12.5px;
-    line-height: 1.7;
-    flex-wrap: wrap;
+    line-height: 1.8;
   }
-  .booking-cta-note i { flex-shrink: 0; }
 
   /* 手機版：回到頂部按鈕位置調整 */
   .back-to-top { bottom: 88px; right: 16px; }
