@@ -1870,11 +1870,15 @@ ul { padding-left: 0; }
   .hero-actions .btn { width: 100%; min-height: 48px; }
   .trust-tags { gap: 6px; }
 
-  .hero-photo-col { display: block !important; margin-top: 16px; }
+  .hero-photo-col { display: block !important; margin-top: 22px; }
   .hero-photo-col .hero-photo-single { max-width: 100%; }
   .hero-photo-col .hero-photo-showcase { max-width: 100%; }
   .hero-photo-col .hero-photo-frame { border-radius: 14px; }
-  .hero-photo-col .hero-photo-frame img { height: 200px; }
+  .hero-photo-col .hero-photo-frame img {
+    height: clamp(260px, 72vw, 320px);
+    object-fit: cover;
+    object-position: center;
+  }
 
   .top-bar-content { flex-direction: column; align-items: stretch; gap: 8px; padding: 8px 0; }
   .top-bar-cta { width: 100%; text-align: center; justify-content: center; }
@@ -1915,7 +1919,9 @@ ul { padding-left: 0; }
   .hero-textbox h1 { font-size: 1.5rem; line-height: 1.25; }
   .trust-tags span { font-size: 12px; padding: 4px 10px; }
   .section-padding { padding: 36px 0; }
-  .hero-photo-col .hero-photo-frame img { height: 180px; }
+  .hero-photo-col .hero-photo-frame img {
+    height: clamp(240px, 68vw, 280px);
+  }
 
   .service-card { padding: 20px 18px; }
   .quote-card { padding: 22px 18px; }
@@ -1948,6 +1954,10 @@ ul { padding-left: 0; }
     flex-wrap: wrap;
   }
   .booking-cta-note i { flex-shrink: 0; }
+
+  /* 手機版：回到頂部按鈕位置調整 */
+  .back-to-top { bottom: 88px; right: 16px; }
+  .back-to-top .btn { width: 48px; height: 48px; }
 
   /* 手機版安全網 — 防止任何元素造成橫向滑動 */
   .why-card, .pre-booking-card, .review-card,
