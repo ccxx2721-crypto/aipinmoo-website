@@ -786,6 +786,19 @@ ul { padding-left: 0; }
   line-height: 1.75;
   margin-bottom: 14px;
 }
+.service-card .service-card-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.service-card .service-card-pet {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin: 10px 0 0;
+}
 .service-card ul {
   list-style: none;
   padding: 0;
@@ -824,6 +837,120 @@ ul { padding-left: 0; }
 .service-link::after { content: " →"; }
 .service-link:hover { gap: 8px; color: var(--blue-hover); box-shadow: none; }
 
+.service-scope-note {
+  max-width: 900px;
+  margin: 6px auto 32px;
+  padding: 13px 18px;
+  background: var(--orange-subtle);
+  border: 1px solid rgba(242,107,58,0.18);
+  border-radius: var(--radius-sm);
+  color: var(--text-sec);
+  font-size: 13.5px;
+  line-height: 1.7;
+  text-align: center;
+}
+.service-comparison {
+  background: var(--bg-cool);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  margin-bottom: 24px;
+}
+.service-comparison-heading { text-align: center; margin-bottom: 22px; }
+.service-comparison-heading h3 {
+  color: var(--navy);
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: none;
+  margin: 0;
+}
+.service-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.comparison-card {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+.comparison-card-accent { border-color: rgba(242,107,58,0.3); }
+.comparison-card h3 {
+  color: var(--navy);
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: none;
+  margin: 0 0 8px;
+}
+.comparison-card > p {
+  color: var(--text-sec);
+  font-size: 13.5px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.comparison-card dl { margin: 0; }
+.comparison-card dl div {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+}
+.comparison-card dt { color: var(--orange); font-size: 12.5px; font-weight: 800; }
+.comparison-card dd { color: var(--text-sec); font-size: 13px; margin: 0; }
+.comparison-note {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+  margin: 18px 0 0;
+}
+.service-exclusions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 34px;
+}
+.exclusion-card {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+.exclusion-card h3 {
+  color: var(--navy);
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: none;
+  margin: 0 0 14px;
+}
+.exclusion-card ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px 18px;
+  list-style: none;
+  margin: 0 0 12px;
+}
+.exclusion-card li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--text-sec);
+  font-size: 13px;
+}
+.exclusion-card li::before {
+  content: "－";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+}
+.exclusion-card p {
+  color: var(--text-muted);
+  font-size: 12.5px;
+  line-height: 1.65;
+  margin: 0;
+}
+
 /* ── Services bottom CTA ── */
 .services-cta {
   margin-top: 36px;
@@ -845,6 +972,51 @@ ul { padding-left: 0; }
 
 /* ── Pricing ── */
 .quote-method { background: var(--bg); }
+.pricing-group {
+  border-radius: var(--radius-lg);
+  padding: 28px 28px 4px;
+}
+.pricing-group-first {
+  background: rgba(255,255,255,0.5);
+  border: 1.5px solid var(--border);
+}
+.pricing-group-returning {
+  background: var(--orange-subtle);
+  border: 1.5px solid rgba(242,107,58,0.22);
+  margin-top: 28px;
+}
+.pricing-group-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.pricing-group-label {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--orange);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+}
+.pricing-group-heading h3 {
+  color: var(--navy);
+  font-size: 1.18rem;
+  font-weight: 900;
+  text-transform: none;
+  margin: 0 0 3px;
+}
+.pricing-group-heading p {
+  color: var(--text-sec);
+  font-size: 13.5px;
+  line-height: 1.65;
+  margin: 0;
+}
 .quote-card {
   background: var(--white);
   border: 1.5px solid var(--border);
@@ -862,7 +1034,7 @@ ul { padding-left: 0; }
   transform: translateY(-3px);
 }
 .quote-card > span {
-  font-size: 2rem;
+  font-size: 1.28rem;
   font-weight: 900;
   color: var(--blue);
   display: block;
@@ -893,6 +1065,23 @@ ul { padding-left: 0; }
   display: inline-block;
   margin-bottom: 10px !important;
 }
+.quote-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+.quote-details li {
+  color: var(--orange);
+  background: var(--orange-pale);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
 .quote-card p {
   font-size: 14px;
   color: var(--text-sec);
@@ -914,10 +1103,42 @@ ul { padding-left: 0; }
   padding-top: 12px;
   border-top: 1px solid var(--border);
 }
+.quote-card .quote-eligibility {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 10px;
+}
+.returning-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 20px;
+  padding: 18px 20px;
+  margin: 0 0 24px;
+  background: #fff;
+  border: 1px solid rgba(242,107,58,0.18);
+  border-radius: var(--radius-md);
+}
+.returning-notes p {
+  position: relative;
+  color: var(--text-sec);
+  font-size: 12.5px;
+  line-height: 1.65;
+  padding-left: 17px;
+  margin: 0;
+}
+.returning-notes p::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-weight: 900;
+}
 .quote-footnote {
   color: var(--text-muted);
   font-size: 14px;
   line-height: 1.9;
+  text-align: center;
+  margin: 20px 0 0;
 }
 
 /* ── Promo banner ── */
@@ -1846,6 +2067,11 @@ ul { padding-left: 0; }
   .booking-path-card { padding: 26px 22px; }
   .booking-path-card .btn { width: 100%; }
   .faq-block { margin-top: 34px; padding: 26px 22px; }
+  .service-comparison-grid,
+  .service-exclusions { grid-template-columns: 1fr; }
+  .service-comparison { padding: 24px 20px; }
+  .pricing-group { padding: 24px 20px 2px; }
+  .returning-notes { grid-template-columns: 1fr; }
 
   .case-compact { padding: 24px; }
 
@@ -1872,6 +2098,12 @@ ul { padding-left: 0; }
 
   .service-card { padding: 20px 18px; }
   .quote-card { padding: 22px 18px; }
+  .comparison-card,
+  .exclusion-card { padding: 20px 18px; }
+  .exclusion-card ul { grid-template-columns: 1fr; }
+  .comparison-card dl div { grid-template-columns: 76px 1fr; }
+  .pricing-group-heading { gap: 10px; }
+  .pricing-group-label { width: 30px; height: 30px; }
   .promo-banner { flex-direction: column; }
   .promo-badge { width: 100%; }
   .services-cta-inner { flex-direction: column; align-items: flex-start; }
